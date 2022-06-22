@@ -26,6 +26,7 @@ function createMovie(container, movies) {
     const movieImg = document.createElement("img");
     movieImg.classList.add("movie-img");
     movieImg.setAttribute("alt", movie.title);
+    movieImg.setAttribute("loading", "lazy");
     movieImg.setAttribute(
       "src",
       `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
